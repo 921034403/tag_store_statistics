@@ -165,9 +165,11 @@ def main():
             end_date = getCurDay()
 
         for mall_id in malls:
-            if cycle== '天':
-                print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
-                tag_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
+            flag = isFullCycle(start_date, end_date, cycle)
+            if flag:
+                if cycle== '天':
+                    print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
+                    tag_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
 
 
 

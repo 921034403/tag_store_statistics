@@ -1,19 +1,27 @@
 # _*_ coding:utf-8 _*_
-from ms import conn,cursor
+from datetime import datetime,timedelta
+
+a='2017-12-31'
+b='2018-01-09'
+
+_a = datetime.strptime(a,'%Y-%m-%d')
+_b = datetime.strptime(b,'%Y-%m-%d')
+
+_c = _b - _a
+
+
+# 检测年
+def func(max,now):
+    now_firstday = now[:4]+'-01-01'
+    date_now = datetime.strptime(now_firstday,'%Y-%m-%d')
+    delta = timedelta(days=-1)
+    date_now += delta
+    date_now = date_now.strftime('%Y-%m-%d')
+    if date_now == max:
+        return False
+    else:
+        return True
 
 
 
-sql = 'select * from django_aip.third_part_wechat_store where mall_id =7 and store_type =1'
-cursor.execute(sql)
-
-res = cursor.fetchall()
-for i in res:
-    if i.get('location'):
-        if i['location'][0] == u'L':
-            store_area = i['location'][:2]
-        else:
-            store_area = i['location'][:2]+u'区'
-        id = i['id']
-        sql = 'update django_aip.third_part_wechat_store set store_area=%s where id = %s'
-        cursor.execute(sql,[store_area,id])
-        conn.commit()
+print(func(a,b))

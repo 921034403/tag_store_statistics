@@ -1,3 +1,4 @@
+# _*_ coding:utf-8 _*_
 import time,random
 from datetime import datetime,timedelta
 import calendar
@@ -46,7 +47,21 @@ def getEveryCycleLastDay(cycle_desc,statistics_type):
         return cycle_desc
 
 
-
+def isFullCycle(max,now,cycle):
+    max = max.strftime('%Y-%m-%d')
+    if cycle == '年':
+        now_firstday = now[:4]+'-01-01'
+    else:
+        now_firstday = now
+    date_now = datetime.strptime(now_firstday,'%Y-%m-%d')
+    delta = timedelta(days=-1)
+    date_now += delta
+    date_now = date_now.strftime('%Y-%m-%d')
+    if date_now == max:
+        # print('%s --->不足一个周期'%(cycle))
+        return False
+    else:
+        return True
 
 
 

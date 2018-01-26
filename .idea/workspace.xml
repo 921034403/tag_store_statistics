@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a65bf3-a733-433d-9237-a9e8be0a1023" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataimport.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ms.py" afterPath="$PROJECT_DIR$/ms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/store.py" afterPath="$PROJECT_DIR$/store.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tag.py" afterPath="$PROJECT_DIR$/tag.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tool.py" afterPath="$PROJECT_DIR$/tool.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,54 +31,77 @@
     <SUITE FILE_PATH="coverage/dataImport1$ggfw.coverage" NAME="ggfw Coverage Results" MODIFIED="1513048604240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$category_crawl.coverage" NAME="category_crawl Coverage Results" MODIFIED="1510210324584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataImport1$ms.coverage" NAME="ms Coverage Results" MODIFIED="1515735531339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataImport1$test.coverage" NAME="test Coverage Results" MODIFIED="1516272039701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$test.coverage" NAME="test Coverage Results" MODIFIED="1516938897366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataImport1$trans.coverage" NAME="trans Coverage Results" MODIFIED="1511950256173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/haishangshijie" />
     <SUITE FILE_PATH="coverage/$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1509532112358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$pinyin.coverage" NAME="pinyin Coverage Results" MODIFIED="1510123386314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$category.coverage" NAME="category Coverage Results" MODIFIED="1510209377071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataImport1$store.coverage" NAME="store Coverage Results" MODIFIED="1516763084492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$store.coverage" NAME="store Coverage Results" MODIFIED="1516945251474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataImport1$tool.coverage" NAME="tool Coverage Results" MODIFIED="1516006855386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$message.coverage" NAME="message Coverage Results" MODIFIED="1509608746533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tag.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tag.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tag.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-700">
-              <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+            <state relative-caret-position="4749">
+              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
               <folding>
                 <element signature="e#23#50#0" expanded="true" />
-                <marker date="1516779398000" expanded="true" signature="796:866" ph="select disti... third_part_wechat_chatrecordtag" />
-                <marker date="1516779398000" expanded="true" signature="880:931" ph="select id fr... third_part_wechat_articleinformation" />
-                <marker date="1516779398000" expanded="true" signature="880:932" ph="select id fr... third_part_wechat_articleinformation" />
-                <marker date="1516779398000" expanded="true" signature="1064:1120" ph="select id fr... third_part_wechat_store" />
-                <marker date="1516779398000" expanded="true" signature="1638:1710" ph="select * fro... third_part_wechat_chatrecordarticle" />
-                <marker date="1516779398000" expanded="true" signature="1829:2098" ph="select chat_... third_part_wechat_chatrecordarticle" />
-                <marker date="1516779398000" expanded="true" signature="1909:1986" ph="select opera... " />
-                <marker date="1516779398000" expanded="true" signature="2539:2641" ph="select disti... third_part_wechat_chatrecordtag" />
-                <marker date="1516779398000" expanded="true" signature="3025:3090" ph="select tag_n... third_part_wechat_tags" />
-                <marker date="1516779398000" expanded="true" signature="4216:4312" ph="select count... third_part_wechat_chatrecord" />
-                <marker date="1516779398000" expanded="true" signature="5358:5479" ph="SELECT stati... data_analysis_keywordcumulate" />
-                <marker date="1516779398000" expanded="true" signature="5497:5545" ph="select id fr... third_part_wechat_mall" />
+                <marker date="1516940338000" expanded="true" signature="796:866" ph="select disti... third_part_wechat_chatrecordtag" />
+                <marker date="1516940338000" expanded="true" signature="880:931" ph="select id fr... third_part_wechat_articleinformation" />
+                <marker date="1516940338000" expanded="true" signature="880:932" ph="select id fr... third_part_wechat_articleinformation" />
+                <marker date="1516940338000" expanded="true" signature="1064:1120" ph="select id fr... third_part_wechat_store" />
+                <marker date="1516940338000" expanded="true" signature="1638:1710" ph="select * fro... third_part_wechat_chatrecordarticle" />
+                <marker date="1516940338000" expanded="true" signature="1829:2098" ph="select chat_... third_part_wechat_chatrecordarticle" />
+                <marker date="1516940338000" expanded="true" signature="1909:1986" ph="select opera... " />
+                <marker date="1516940338000" expanded="true" signature="2539:2641" ph="select disti... third_part_wechat_chatrecordtag" />
+                <marker date="1516940338000" expanded="true" signature="3025:3090" ph="select tag_n... third_part_wechat_tags" />
+                <marker date="1516940338000" expanded="true" signature="4216:4312" ph="select count... third_part_wechat_chatrecord" />
+                <marker date="1516940338000" expanded="true" signature="5358:5479" ph="SELECT stati... data_analysis_keywordcumulate" />
+                <marker date="1516940338000" expanded="true" signature="5497:5545" ph="select id fr... third_part_wechat_mall" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+              <folding>
+                <element signature="e#23#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/store.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state relative-caret-position="-1099">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
-                <marker date="1516763084000" expanded="true" signature="825:889" ph="select id,ch... third_part_wechat_store" />
-                <marker date="1516763084000" expanded="true" signature="1408:1468" ph="select id,st... third_part_wechat_articleinformation" />
-                <marker date="1516763084000" expanded="true" signature="1985:2154" ph="select opera... third_part_wechat_chatrecordarticle" />
-                <marker date="1516763084000" expanded="true" signature="3424:3520" ph="select count... third_part_wechat_chatrecord" />
-                <marker date="1516763084000" expanded="true" signature="4744:4863" ph="SELECT stati... data_analysis_storecumulate" />
-                <marker date="1516763084000" expanded="true" signature="4881:4929" ph="select id fr... third_part_wechat_mall" />
+                <element signature="e#23#49#0" expanded="true" />
+                <marker date="1516945429000" expanded="true" signature="837:901" ph="select id,ch... third_part_wechat_store" />
+                <marker date="1516945429000" expanded="true" signature="1262:1322" ph="select id,st... third_part_wechat_articleinformation" />
+                <marker date="1516945429000" expanded="true" signature="1797:1977" ph="select opera... third_part_wechat_chatrecordarticle" />
+                <marker date="1516945429000" expanded="true" signature="3261:3357" ph="select count... third_part_wechat_chatrecord" />
+                <marker date="1516945429000" expanded="true" signature="4579:4698" ph="SELECT stati... data_analysis_storecumulate" />
+                <marker date="1516945429000" expanded="true" signature="4716:4764" ph="select id fr... third_part_wechat_mall" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="22" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,12 +181,12 @@
         <option value="$PROJECT_DIR$/brand_key_name.py" />
         <option value="$PROJECT_DIR$/ggfw.py" />
         <option value="$PROJECT_DIR$/key_words.py" />
-        <option value="$PROJECT_DIR$/tool.py" />
         <option value="$PROJECT_DIR$/ms.py" />
         <option value="$PROJECT_DIR$/dataimport.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/store.py" />
         <option value="$PROJECT_DIR$/tag.py" />
+        <option value="$PROJECT_DIR$/tool.py" />
+        <option value="$PROJECT_DIR$/store.py" />
       </list>
     </option>
   </component>
@@ -228,7 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tag">
+  <component name="RunManager" selected="Python.store">
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -516,9 +536,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tag" />
-        <item index="1" class="java.lang.String" itemvalue="Python.store" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.store" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tag" />
         <item index="3" class="java.lang.String" itemvalue="Python.tool" />
         <item index="4" class="java.lang.String" itemvalue="Python.ms" />
       </list>
@@ -544,7 +564,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48335016" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44500506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -626,33 +646,12 @@
     <entry file="file://$PROJECT_DIR$/haishangshijie/store_type.py" />
     <entry file="file://$PROJECT_DIR$/haishangshijie/trans.py" />
     <entry file="file://$PROJECT_DIR$/key_detail_table.py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <marker date="1516270347000" expanded="true" signature="60:143" ph="select * fro... third_part_wechat_store" />
-            <marker date="1516270347000" expanded="true" signature="408:481" ph="update djang... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataimport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
           <folding>
             <marker date="1516068321000" expanded="true" signature="207:237" ph="insert into " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -667,39 +666,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store.py">
+    <entry file="file://$PROJECT_DIR$/tag.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="150" column="0" lean-forward="true" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state relative-caret-position="4749">
+          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
-            <marker date="1516763084000" expanded="true" signature="825:889" ph="select id,ch... third_part_wechat_store" />
-            <marker date="1516763084000" expanded="true" signature="1408:1468" ph="select id,st... third_part_wechat_articleinformation" />
-            <marker date="1516763084000" expanded="true" signature="1985:2154" ph="select opera... third_part_wechat_chatrecordarticle" />
-            <marker date="1516763084000" expanded="true" signature="3424:3520" ph="select count... third_part_wechat_chatrecord" />
-            <marker date="1516763084000" expanded="true" signature="4744:4863" ph="SELECT stati... data_analysis_storecumulate" />
-            <marker date="1516763084000" expanded="true" signature="4881:4929" ph="select id fr... third_part_wechat_mall" />
+            <element signature="e#23#50#0" expanded="true" />
+            <marker date="1516940338000" expanded="true" signature="796:866" ph="select disti... third_part_wechat_chatrecordtag" />
+            <marker date="1516940338000" expanded="true" signature="880:931" ph="select id fr... third_part_wechat_articleinformation" />
+            <marker date="1516940338000" expanded="true" signature="880:932" ph="select id fr... third_part_wechat_articleinformation" />
+            <marker date="1516940338000" expanded="true" signature="1064:1120" ph="select id fr... third_part_wechat_store" />
+            <marker date="1516940338000" expanded="true" signature="1638:1710" ph="select * fro... third_part_wechat_chatrecordarticle" />
+            <marker date="1516940338000" expanded="true" signature="1829:2098" ph="select chat_... third_part_wechat_chatrecordarticle" />
+            <marker date="1516940338000" expanded="true" signature="1909:1986" ph="select opera... " />
+            <marker date="1516940338000" expanded="true" signature="2539:2641" ph="select disti... third_part_wechat_chatrecordtag" />
+            <marker date="1516940338000" expanded="true" signature="3025:3090" ph="select tag_n... third_part_wechat_tags" />
+            <marker date="1516940338000" expanded="true" signature="4216:4312" ph="select count... third_part_wechat_chatrecord" />
+            <marker date="1516940338000" expanded="true" signature="5358:5479" ph="SELECT stati... data_analysis_keywordcumulate" />
+            <marker date="1516940338000" expanded="true" signature="5497:5545" ph="select id fr... third_part_wechat_mall" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tag.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-700">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="147">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding>
-            <element signature="e#23#50#0" expanded="true" />
-            <marker date="1516779398000" expanded="true" signature="796:866" ph="select disti... third_part_wechat_chatrecordtag" />
-            <marker date="1516779398000" expanded="true" signature="880:931" ph="select id fr... third_part_wechat_articleinformation" />
-            <marker date="1516779398000" expanded="true" signature="880:932" ph="select id fr... third_part_wechat_articleinformation" />
-            <marker date="1516779398000" expanded="true" signature="1064:1120" ph="select id fr... third_part_wechat_store" />
-            <marker date="1516779398000" expanded="true" signature="1638:1710" ph="select * fro... third_part_wechat_chatrecordarticle" />
-            <marker date="1516779398000" expanded="true" signature="1829:2098" ph="select chat_... third_part_wechat_chatrecordarticle" />
-            <marker date="1516779398000" expanded="true" signature="1909:1986" ph="select opera... " />
-            <marker date="1516779398000" expanded="true" signature="2539:2641" ph="select disti... third_part_wechat_chatrecordtag" />
-            <marker date="1516779398000" expanded="true" signature="3025:3090" ph="select tag_n... third_part_wechat_tags" />
-            <marker date="1516779398000" expanded="true" signature="4216:4312" ph="select count... third_part_wechat_chatrecord" />
-            <marker date="1516779398000" expanded="true" signature="5358:5479" ph="SELECT stati... data_analysis_keywordcumulate" />
-            <marker date="1516779398000" expanded="true" signature="5497:5545" ph="select id fr... third_part_wechat_mall" />
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1099">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#49#0" expanded="true" />
+            <marker date="1516945429000" expanded="true" signature="837:901" ph="select id,ch... third_part_wechat_store" />
+            <marker date="1516945429000" expanded="true" signature="1262:1322" ph="select id,st... third_part_wechat_articleinformation" />
+            <marker date="1516945429000" expanded="true" signature="1797:1977" ph="select opera... third_part_wechat_chatrecordarticle" />
+            <marker date="1516945429000" expanded="true" signature="3261:3357" ph="select count... third_part_wechat_chatrecord" />
+            <marker date="1516945429000" expanded="true" signature="4579:4698" ph="SELECT stati... data_analysis_storecumulate" />
+            <marker date="1516945429000" expanded="true" signature="4716:4764" ph="select id fr... third_part_wechat_mall" />
           </folding>
         </state>
       </provider>
