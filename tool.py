@@ -48,7 +48,10 @@ def getEveryCycleLastDay(cycle_desc,statistics_type):
 
 
 def isFullCycle(max,now,cycle):
-    max = max.strftime('%Y-%m-%d')
+    if type(max)==str:
+        pass
+    else:
+        max = max.strftime('%Y-%m-%d')
     if cycle == '年':
         now_firstday = now[:4]+'-01-01'
     else:
