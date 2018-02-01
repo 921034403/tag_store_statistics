@@ -66,7 +66,7 @@ def isFullCycle(max,now,cycle):
     else:
         return True
 
-
+# def assemble_basic_data():
 
 
 

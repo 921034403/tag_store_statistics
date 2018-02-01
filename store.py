@@ -86,8 +86,10 @@ def analysis_one_set(sql3,article_id,fromat_style,param3_end,store_name,statisti
         cycle_lis = list(set([i['cycle'] for i in res]))
         cycle_lis.sort(key=lambda i: int(''.join(i.split('-'))), reverse=False)
         for add_time_desc in cycle_lis:
-            chat_records = set([i['chat_record_id'] for i in res if i['operation_type']==0 and i['cycle']==add_time_desc])
-            chat_records_click = set([i['chat_record_id'] for i in res if i['operation_type']==1 and i['cycle']==add_time_desc])
+            chat_records_repeat = [i['chat_record_id'] for i in res if i['cycle'] == add_time_desc]
+            chat_records_click_repeat = [i['chat_record_id'] for i in res if i['operation_type']==1 and i['cycle']==add_time_desc]
+            chat_records = set(chat_records_repeat)
+            chat_records_click = set(chat_records_click_repeat)
             # 去重的呼出次数
             ask_count = len(chat_records)
             # 去重的点击数
@@ -110,20 +112,23 @@ def analysis_one_set(sql3,article_id,fromat_style,param3_end,store_name,statisti
                 # print(cursor.mogrify(sql,[chat_records]))
                 # print(article_id)
             add_time = getEveryCycleLastDay(add_time_desc,statistics_type)
-            convert_rate = round(click_num*100/float(ask_count),2)
+            # convert_rate = round(click_num*100/float(ask_count),2)
+            click_rate = round(click_num*100/float(ask_count),2)
+
             data_dic = {'store_name':store_name,
                         'statistics_type':statistics_type,
                         'ask_count':ask_count,
                         'ask_count_person':ask_count_person,
                         'click_num': click_num,
                         'click_num_person': click_num_person,
-                        'convert_rate':convert_rate,
+                        # 'convert_rate':convert_rate,
+                        'click_rate':click_rate,
                         'add_time':add_time,
                         'mall_id':mall_id,
                         'add_time_desc':add_time_desc}
-            # dataimport(data_dic,'data_analysis_storecumulate')
-            print(u'商户：%s ，统计周期类型：%d ，呼叫次数：%d ，点击次数：%d ，点击人数：%d ，来访人数：%d ，访问概率：%.2f ，周期最后一天的日期：%s ，商城id：%d ，周期描述：%s '
-                  %(store_name, statistics_type, ask_count,click_num,click_num_person, ask_count_person, convert_rate, add_time, mall_id, add_time_desc))
+            dataimport(data_dic,'data_analysis_storecumulate')
+            # print(u'商户：%s ，统计周期类型：%d ，呼叫次数：%d ，点击次数：%d ，点击人数：%d ，来访人数：%d ，访问概率：%.2f ，周期最后一天的日期：%s ，商城id：%d ，周期描述：%s '
+            #       %(store_name, statistics_type, ask_count,click_num,click_num_person, ask_count_person, convert_rate, add_time, mall_id, add_time_desc))
 
 def main():
     sql_all = 'SELECT statistics_type, max(add_time) as last_time FROM django_aip.data_analysis_storecumulate group by statistics_type'
@@ -155,6 +160,7 @@ def main():
         for mall_id in malls:
             flag = isFullCycle(start_date,end_date,cycle)
             if flag:
+
                 print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
 
                 store_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)

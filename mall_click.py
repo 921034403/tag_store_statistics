@@ -124,9 +124,8 @@ def main():
             flag = isFullCycle(start_date,end_date,cycle)
             if flag:
                 print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
-                mall_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
+                # mall_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
 
 
 if __name__ == '__main__':
-    # 1523
     main()
