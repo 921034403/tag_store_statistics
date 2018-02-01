@@ -100,6 +100,7 @@ def analysis_one_set(res,mall_id,statistics_type,wechat_account_id,to_username):
 
 
 def main():
+    print('互动量分析(商城为单位) data_analysis_upstreammsgday')
     sql_all = 'SELECT  wechat_account_id,max(ref_date) as last_time FROM django_aip.data_analysis_upstreammsgday group by wechat_account_id'
     sql_mall = "select mall_id,id as wechat_account_id,user_name from django_aip.third_part_wechat_wechataccount where mall_id<>''"
     cursor.execute(sql_all)
@@ -143,10 +144,9 @@ def main():
         to_username = mall_username_dic.get(wechat_account_id)
         flag = isFullCycle(start_date,end_date,cycle)
         if flag:
-            print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
-            # streammsg_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date,wechat_account_id=wechat_account_id,to_username=to_username)
+            # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
+            streammsg_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date,wechat_account_id=wechat_account_id,to_username=to_username)
 
 
 if __name__ == '__main__':
-    print(111)
     main()

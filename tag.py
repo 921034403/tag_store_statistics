@@ -1,7 +1,7 @@
 # _*_ coding:utf-8 _*_
 from ms import cursor, conn
 from dataimport import dataimport
-from tool import getCurDay,getFirstDayOfCurWeek,getFirstDayOfCurMonth,getFirstDayOfCurYear,getEveryCycleLastDay
+from tool import getCurDay,getFirstDayOfCurWeek,getFirstDayOfCurMonth,getFirstDayOfCurYear,getEveryCycleLastDay,isFullCycle
 # 标签分析
 
 
@@ -9,7 +9,7 @@ def tag_analysis(cycle=None,at_id=None,mall_id=None, start_date=None, end_date=N
     # cycle:统计周期
     # mall_id:商城id
     # at_id:素材类型
-    # 默认去掉公众号文章素材(at_id=1)
+    # 默认素材(at_id)
     statistics_dic = dict((
         (1, '总计'),
         (2, '年'),
@@ -84,11 +84,11 @@ def tag_analysis(cycle=None,at_id=None,mall_id=None, start_date=None, end_date=N
                     tag_name = tag_info.get('tag_name')
                     tag_type = tag_info.get('tag_type')
                     mall_id = mall_id
-                    analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type)
+                    analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type,tag_id)
 
 
 
-def analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type):
+def analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type,tag_id):
     cycle_lis = list(set([i['cycle'] for i in res]))
     cycle_lis.sort(key=lambda i:int(''.join(i.split('-'))),reverse=False)
     for add_time_desc in cycle_lis:
@@ -111,7 +111,7 @@ def analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type):
         convert_rate = round(click_count*100/float(ask_count),2)
         if not tag_type:
             tag_type =2
-        data_dic = {
+        data_dic = {'tag_id':tag_id,
                'tag_name':tag_name,
                'tag_type':tag_type,
                'statistics_type':statistics_type,
@@ -123,13 +123,14 @@ def analysis_one_set(res,tag_name,tag_type,mall_id,statistics_type):
                'add_time_desc':add_time_desc}
         dataimport(data_dic,'data_analysis_keywordcumulate')
 
-        # print(u'关键词:%s ,类型:%d ,周期类型:%d ,呼叫次数:%d 来访人数:%d 转化率：%.2f 周期最后日期:%s 商城：%s 周期描述：%s'
-        #       %(tag_name,tag_type,statistics_type,ask_count,ask_count_person,convert_rate,add_time,mall_id,add_time_desc))
+        # print(u'关键词id:%d 关键词:%s ,类型:%d ,周期类型:%d ,呼叫次数:%d 来访人数:%d 转化率：%.2f 周期最后日期:%s 商城：%s 周期描述：%s'
+        #       %(tag_id,tag_name,tag_type,statistics_type,ask_count,ask_count_person,convert_rate,add_time,mall_id,add_time_desc))
 
 
 
 
 def main():
+    print('标签分析  data_analysis_keywordcumulate')
     sql_all = 'SELECT statistics_type, max(add_time) as last_time FROM django_aip.data_analysis_keywordcumulate group by statistics_type'
     sql_mall = 'select id from django_aip.third_part_wechat_mall'
     cursor.execute(sql_all)
@@ -167,9 +168,9 @@ def main():
         for mall_id in malls:
             flag = isFullCycle(start_date, end_date, cycle)
             if flag:
-                if cycle== '天':
-                    print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
-                    tag_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
+
+                # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
+                tag_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
 
 
 

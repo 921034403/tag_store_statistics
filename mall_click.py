@@ -83,10 +83,11 @@ def analysis_one_set(res,mall_id,article_count,statistics_type):
                     'add_time':add_time,
                     'click_num_avg':click_num_avg}
         dataimport(data_dic,'data_analysis_mallclickcumulate')
-        # print(u'商户：%s ，统计周期类型：%d ，呼叫次数：%d ，点击次数：%d ，点击人数：%d ，来访人数：%d ，访问概率：%.2f ，周期最后一天的日期：%s ，商城id：%d ，周期描述：%s '
-        #       %(store_name, statistics_type, ask_count,click_num,click_num_person, ask_count_person, convert_rate, add_time, mall_id, add_time_desc))
+        # print(u'商城id：%d ，统计周期类型：%d ，点击次数：%d ，素材平均点击次数：%d ，周期最后一天的日期：%s'
+        #       %(mall_id, statistics_type, click_num,click_num_avg,add_time))
 
 def main():
+    print('商城分析  data_analysis_mallclickcumulate')
     sql_all = 'SELECT statistics_type, max(add_time) as last_time FROM django_aip.data_analysis_mallclickcumulate group by statistics_type'
     sql_mall = 'select id from django_aip.third_part_wechat_mall'
     cursor.execute(sql_all)
@@ -123,8 +124,8 @@ def main():
         for mall_id in malls:
             flag = isFullCycle(start_date,end_date,cycle)
             if flag:
-                print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
-                # mall_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
+                # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
+                mall_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
 
 
 if __name__ == '__main__':
