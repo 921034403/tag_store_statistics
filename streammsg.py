@@ -30,7 +30,7 @@ def streammsg_analysis(cycle=None,at_id=None,mall_id=None,start_date =None,end_d
           'where to_username=%s '
     params = [fromat_style, to_username]
     if start_date:
-        sql += 'and add_time>%s '
+        sql += 'and add_time>=%s '
         params.append(start_date)
     if end_date:
         sql += 'and add_time<%s '
@@ -97,11 +97,14 @@ def analysis_one_set(res,mall_id,statistics_type,wechat_account_id,to_username):
         }
         dataupdate(data_dic, 'data_analysis_upstreammsgday')
 
+        # print(data_dic['ref_date'], data_dic['wechat_account_id'], data_dic['msg_user'],
+        #       data_dic['msg_count'], data_dic['msg_total_count'],
+        #       data_dic['msg_count_avg'], data_dic['msg_total_avg'], data_dic['msg_type'])
 
 
 def main():
     print('互动量分析(商城为单位) data_analysis_upstreammsgday')
-    sql_all = 'SELECT  wechat_account_id,max(ref_date) as last_time FROM django_aip.data_analysis_upstreammsgday group by wechat_account_id'
+    sql_all = "SELECT  wechat_account_id,min(ref_date) as last_time FROM django_aip.data_analysis_upstreammsgday where msg_type =6 and ref_date>'2018-03-12' and msg_total_count=0  group by wechat_account_id"
     sql_mall = "select mall_id,id as wechat_account_id,user_name from django_aip.third_part_wechat_wechataccount where mall_id<>''"
     cursor.execute(sql_all)
     res_alltime = cursor.fetchall()
@@ -130,7 +133,7 @@ def main():
     for i in res_alltime:
         statistics_type = i['statistics_type']
         cycle = statistics_dic.get(statistics_type)
-        start_date = i.get('last_time') or '2017-01-01'
+        start_date = i.get('last_time')
         if statistics_type == 2:
             end_date = getFirstDayOfCurYear()
         elif statistics_type == 3:
@@ -143,8 +146,9 @@ def main():
         mall_id = mall_wechat_dic.get(wechat_account_id)
         to_username = mall_username_dic.get(wechat_account_id)
         flag = isFullCycle(start_date,end_date,cycle)
+        # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
         if flag:
-            # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, mall_id))
+            print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d ' % (cycle, start_date, end_date, wechat_account_id))
             streammsg_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date,wechat_account_id=wechat_account_id,to_username=to_username)
 
 
