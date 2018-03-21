@@ -1,13 +1,12 @@
 # _*_ coding:utf-8 _*_
-from es_config import es_mall_lis
+from es_config import es_mall_lis,host
 from ms import cursor,conn
 from elasticsearch import Elasticsearch,helpers
 from elasticsearch_dsl import Search
 import random,datetime,json
 
-
 def django_aip_es_v4(es_mall_lis):
-    client = Elasticsearch(hosts="119.29.223.117")
+    client = Elasticsearch(hosts=host)
     begin_date = datetime.datetime.strftime(datetime.datetime.now(),"%Y-%m-%d")
     sql = "select id,chs_name from third_part_wechat_mall"
     cursor.execute(sql)

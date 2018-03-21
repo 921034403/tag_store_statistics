@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a65bf3-a733-433d-9237-a9e8be0a1023" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es_config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataImport1.iml" afterPath="$PROJECT_DIR$/.idea/dataImport1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ms.py" afterPath="$PROJECT_DIR$/ms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tool.py" afterPath="$PROJECT_DIR$/tool.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es_config.py" afterPath="$PROJECT_DIR$/es_config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es_test.py" afterPath="$PROJECT_DIR$/es_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,14 +110,14 @@
       <file leaf-file-name="es_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/es_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1863">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="276">
+              <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
-                <element signature="e#23#56#0" expanded="true" />
-                <marker date="1521613678000" expanded="true" signature="376:422" ph="select id,ch... third_part_wechat_mall" />
-                <marker date="1521613678000" expanded="true" signature="980:1057" ph="select * fro... third_part_wechat_articleinformation" />
-                <marker date="1521613678000" expanded="true" signature="1489:1578" ph="select tag_n... saasd" />
-                <marker date="1521613678000" expanded="true" signature="1940:2012" ph="select chs_n... third_part_wechat_store" />
+                <element signature="e#23#61#0" expanded="true" />
+                <marker date="1521613802000" expanded="true" signature="368:414" ph="select id,ch... third_part_wechat_mall" />
+                <marker date="1521613802000" expanded="true" signature="972:1049" ph="select * fro... third_part_wechat_articleinformation" />
+                <marker date="1521613802000" expanded="true" signature="1481:1570" ph="select tag_n... saasd" />
+                <marker date="1521613802000" expanded="true" signature="1932:2004" ph="select chs_n... third_part_wechat_store" />
               </folding>
             </state>
           </provider>
@@ -161,8 +156,8 @@
       <file leaf-file-name="es_config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/es_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+            <state relative-caret-position="27">
+              <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -253,9 +248,9 @@
         <option value="$PROJECT_DIR$/ms.py" />
         <option value="$PROJECT_DIR$/tool.py" />
         <option value="$PROJECT_DIR$/streammsg.py" />
-        <option value="$PROJECT_DIR$/es_config.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/create_es.py" />
+        <option value="$PROJECT_DIR$/es_config.py" />
         <option value="$PROJECT_DIR$/es_test.py" />
       </list>
     </option>
@@ -629,12 +624,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12205567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47664544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47664544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -859,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/es_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/site-packages/elasticsearch_dsl/search.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -893,16 +881,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/es_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/es_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="276">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="e#23#56#0" expanded="true" />
-            <marker date="1521613678000" expanded="true" signature="376:422" ph="select id,ch... third_part_wechat_mall" />
-            <marker date="1521613678000" expanded="true" signature="980:1057" ph="select * fro... third_part_wechat_articleinformation" />
-            <marker date="1521613678000" expanded="true" signature="1489:1578" ph="select tag_n... saasd" />
-            <marker date="1521613678000" expanded="true" signature="1940:2012" ph="select chs_n... third_part_wechat_store" />
+            <element signature="e#23#61#0" expanded="true" />
+            <marker date="1521613802000" expanded="true" signature="368:414" ph="select id,ch... third_part_wechat_mall" />
+            <marker date="1521613802000" expanded="true" signature="972:1049" ph="select * fro... third_part_wechat_articleinformation" />
+            <marker date="1521613802000" expanded="true" signature="1481:1570" ph="select tag_n... saasd" />
+            <marker date="1521613802000" expanded="true" signature="1932:2004" ph="select chs_n... third_part_wechat_store" />
           </folding>
         </state>
       </provider>
