@@ -3,11 +3,11 @@ import pymysql
 import calendar
 
 mysql_option = {
-    "host": "127.0.0.1",
+    "host": "119.23.153.216",
     "port": 3306,
-    "user": "sls",
+    "user": "root",
     "database":"django_aip",
-    "password": "ggsmd",
+    "password": "gxtangyu",
     'cursorclass': pymysql.cursors.DictCursor,
     'charset': "utf8",
     "local_infile": True

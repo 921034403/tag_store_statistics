@@ -48,6 +48,8 @@ def getEveryCycleLastDay(cycle_desc,statistics_type):
 
 
 def isFullCycle(max,now,cycle):
+    if max==None:
+        return False
     if type(max)==str:
         pass
     else:
