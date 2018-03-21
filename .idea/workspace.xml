@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a65bf3-a733-433d-9237-a9e8be0a1023" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es_config.py" afterPath="$PROJECT_DIR$/es_config.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es_test.py" afterPath="$PROJECT_DIR$/es_test.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/es_test.py" afterPath="$PROJECT_DIR$/es.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -107,8 +106,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="es_test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/es_test.py">
+      <file leaf-file-name="es.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/es.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
               <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
@@ -533,7 +532,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="dataImport1" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/es_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/es.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -889,7 +888,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/es_test.py">
+    <entry file="file://$PROJECT_DIR$/es.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
