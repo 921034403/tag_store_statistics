@@ -6,6 +6,7 @@ from elasticsearch_dsl import Search
 import random,datetime,json
 
 def django_aip_es_v4(es_mall_lis):
+    article_id_end = None
     client = Elasticsearch(hosts=host)
     begin_date = datetime.datetime.strftime(datetime.datetime.now(),"%Y-%m-%d")
     sql = "select id,chs_name from third_part_wechat_mall"
@@ -14,7 +15,7 @@ def django_aip_es_v4(es_mall_lis):
     mall_dic = { i["id"]:i["chs_name"] for i in mallinfo}
     for malls_id in es_mall_lis:
         malls = mall_dic.get(malls_id)
-        s = Search(using=client, index="django_aip_es_v4")\
+        s = Search(using=client, index="django_aip_es")\
             .filter("term",malls_id=21)\
             .sort("-article_id")[:1]
         response = s.execute()
@@ -26,15 +27,16 @@ def django_aip_es_v4(es_mall_lis):
         print("in  es  max article_id  is %d"%(max_article_id))
         sql = "select * from third_part_wechat_articleinformation where id>%s and mall_id=%s"
         cursor.execute(sql,[max_article_id,malls_id])
-        res = cursor.fetchall()
-
-        if res:
+        res_all = cursor.fetchall()
+        print(u"%s 可插入%d条新数据"%(malls,len(res_all)))
+        if res_all:
             count = 20  # everytime insert es data`s count
-            insert_count = int(random._ceil(len(res) / float(count)))
+            insert_count = int(random._ceil(len(res_all) / float(count)))
             for cut in xrange(1,insert_count+1):
                 action_lis = []
-                datas = res[(cut-1)*count:cut*count]
+                datas = res_all[(cut-1)*count:cut*count]
                 for action in datas:
+                    article_id_end = action["id"]
                     sql = "select tag_name,chs_name,eng_name from v_article_tag_store where articleinformation_id=%s"
                     cursor.execute(sql,[action["id"]])
                     res = cursor.fetchall()
@@ -43,7 +45,7 @@ def django_aip_es_v4(es_mall_lis):
                         tags = [i["tag_name"] for i in res]
                     else:
                         tags = []
-                        sql = "select chs_name,eng_name from third_part_wechat_store where store_id =%s"
+                        sql = "select chs_name,eng_name from third_part_wechat_store where id= %s"
                         cursor.execute(sql,[action["store_id"]])
                         res = cursor.fetchone()
                         stores = res.get("chs_name") or res.get("eng_name")
@@ -51,7 +53,7 @@ def django_aip_es_v4(es_mall_lis):
                     action_lis.append({
                         "article_id":action["id"],
                         "title":action["title"],
-                        "raw_content":action["raw_content"],
+                        # "raw_content":action["raw_content"],
                         "thumb_url":action["thumb_url"],
                         "url":action["url"],
                         "tags":tags,
@@ -63,9 +65,19 @@ def django_aip_es_v4(es_mall_lis):
                         "stores_id":action["store_id"],
                         "article_type":action["at_id"]
                     })
-                    # 批量导入es
-                    ok,err = helpers.bulk(client, actions=action_lis, index="django_aip_es_v4", doc_type="article")
-                    print(ok,err)
+
+                # 批量导入es
+                ok,err = helpers.bulk(client, actions=action_lis, index="django_aip_es", doc_type="article")
+                print(ok,err)
+
+
+        print(max_article_id,article_id_end)
+        '''
+        # 清除raw_content
+        update_at_sql = "update from third_part_wechat_articleinformation set raw_content=%s where mall_id=%s and id>%s and id<=%s "
+        cursor.execute(update_at_sql,[malls_id,max_article_id,article_id_end])
+        conn.commit()
+        '''
 
 if __name__ == "__main__":
     django_aip_es_v4(es_mall_lis)
