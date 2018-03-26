@@ -71,11 +71,13 @@ def django_aip_es_v4(es_mall_lis):
                 print(ok,err)
 
 
+
+
         print(max_article_id,article_id_end)
         '''
         # 清除raw_content
         update_at_sql = "update from third_part_wechat_articleinformation set raw_content=%s where mall_id=%s and id>%s and id<=%s "
-        cursor.execute(update_at_sql,[malls_id,max_article_id,article_id_end])
+        cursor.execute(update_at_sql,[None,malls_id,max_article_id,article_id_end])
         conn.commit()
         '''
 
