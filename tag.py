@@ -46,9 +46,10 @@ def tag_analysis(cycle=None,at_id=None,mall_id=None, start_date=None, end_date=N
     cursor.execute(sql1)
     tags = cursor.fetchall()
     if params3:
-       cursor.execute(sql3,params3)
+        cursor.execute(sql3,params3)
     else:
-        cursor.execute(sql3)
+        print('mall is not  data')
+        return
     artcle_lis = [i['id'] for i in cursor.fetchall()]
     if artcle_lis:
         flag_sql = 'select * from third_part_wechat_chatrecordarticle where article_id in %s '
@@ -164,12 +165,10 @@ def main():
             end_date = getFirstDayOfCurWeek()
         elif statistics_type == 5:
             end_date = getCurDay()
-
         for mall_id in malls:
             flag = isFullCycle(start_date, end_date, cycle)
             if flag:
-
-                # print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
+                print('统计周期：%s  统计日期范围：%s--%s  统计商城id：%d '%(cycle,start_date,end_date,mall_id))
                 tag_analysis(cycle=cycle, at_id=None, mall_id=mall_id, start_date=start_date,end_date=end_date)
 
 
