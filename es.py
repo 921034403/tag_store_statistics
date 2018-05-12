@@ -1,6 +1,6 @@
 # _*_ coding:utf-8 _*_
 from es_config import es_mall_lis,client,praise_es,host
-from ms import cursor,conn
+from ms import cursor,conn,corpus_es
 from elasticsearch import Elasticsearch,helpers
 from elasticsearch_dsl import Search,Q
 import random,datetime,json
@@ -105,12 +105,24 @@ def update_django_aip_es_praise():
     client.index('blog','doc',{'aa':1},id)
 
 
-def delete_praise():
-    client = Elasticsearch(hosts=host)
-    s = Search(using=client, index=praise_es, doc_type="goods") \
-        .query(
-        Q({'match_all': {}})
-    ).delete()
+def empty_praise(lis=None):
+    if type(lis) == list and lis:
+        for i in lis:
+            client = Elasticsearch(hosts=host)
+            s = Search(using=client, index=i, doc_type="goods") \
+                .query(
+                Q({'match_all': {}})
+            ).delete()
+    else:
+        print("no actions")
+
+def delete_praise(lis=None):
+    if type(lis) ==list and lis:
+        for i in lis:
+            client = Elasticsearch(hosts=host)
+            client.indices.delete(index=i, ignore=[400, 404])
+    else:
+        print("no actions")
 
 
 def search():
@@ -128,9 +140,42 @@ def search():
     r = s.execute()
     print(r)
 
+
+def corpus():
+    sql = "select DISTINCT(user_id) as user_id from online_bussiness_corpusbatch"
+    cursor.execute(sql)
+    users = cursor.fetchall()
+    for user in users:
+        user_id =user["user_id"]
+        cursor.execute("select mall_id from users_userprofile where id = %s",[user_id])
+        mallinfo = cursor.fetchone() or {}
+        mall_id = mallinfo.get("mall_id")
+        sql = "SELECT * FROM v_corpus where user_id =%s "
+        cursor.execute(sql,[user_id])
+        data = cursor.fetchall()
+        if data:
+            count = 20  # everytime insert es data`s count
+            insert_count = int(random._ceil(len(data) / float(count)))
+            for cut in xrange(1, insert_count + 1):
+                action_lis = data[(cut - 1) * count:cut * count]
+                for i in action_lis:
+                    if mall_id:
+                        i["mall_id"] = mall_id
+                    i["_id"] = i["corpusobject_id"]
+                    i["question_list"] = json.loads(i["question_list"])
+                    i["text_anwser"] = json.loads(i["answer_list"])['text_anwser']
+                    i["praisegoods_answer"] = json.loads(i["answer_list"])['praisegoods_answer']
+                    del i["answer_list"]
+            ok, err = helpers.bulk(client, actions=action_lis, index=corpus_es, doc_type="corpus")
+            print(ok,err)
+
+
+
+
+
+
 if __name__ == "__main__":
     #todo  有赞数据导入
-    # delete_praise
     # django_aip_es_praise()
 
 
@@ -138,12 +183,18 @@ if __name__ == "__main__":
     django_aip_es(es_mall_lis)
 
 
-
     # todo 更新测试
     # update_django_aip_es_praise()
 
 
-    # search()
+    # todo 清空index
+    # delete_praise([corpus_es])
+
+
+
+    # todo 删除index
+    # delete_praise([corpus_es])
+
 
 
 
