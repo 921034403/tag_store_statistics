@@ -4,8 +4,15 @@ import json,random
 from ms import corpus_es,cursor,conn
 from es_config import client
 from elasticsearch import helpers
+from elasticsearch_dsl import Search,Q
 
 def corpus():
+    # 先清空
+    s = Search(using=client, index=corpus_es, doc_type="corpus") \
+        .query(
+        Q({'match_all': {}})
+    ).delete()
+
     sql = "select DISTINCT(user_id) as user_id from online_bussiness_corpusbatch"
     cursor.execute(sql)
     users = cursor.fetchall()
