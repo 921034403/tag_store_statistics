@@ -20,6 +20,7 @@ if IP == "120.76.102.238":
         'charset': "utf8",
         "local_infile": True
     }
+    praise_es = "django_aip_es_praise_v6"
     corpus_es = "django_aip_corpus_v1"
 else:
     print(u"当前处于测试环境 ip: %s" % (IP))
@@ -33,6 +34,7 @@ else:
         'charset': "utf8",
         "local_infile": True
     }
+    praise_es = "django_aip_es_praise_v7"
     corpus_es = "django_aip_corpus_v1(test)"
 
 

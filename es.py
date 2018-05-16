@@ -1,6 +1,6 @@
 # _*_ coding:utf-8 _*_
-from es_config import es_mall_lis,client,praise_es,host
-from ms import cursor,conn,corpus_es
+from es_config import es_mall_lis,client,host
+from ms import cursor,conn,corpus_es,praise_es
 from elasticsearch import Elasticsearch,helpers
 from elasticsearch_dsl import Search,Q
 import random,datetime,json
