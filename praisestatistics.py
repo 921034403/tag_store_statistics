@@ -38,8 +38,7 @@ def statistic(store_lis = None,func = None,start=None,end=None):
         store_name = store_info["name"]
         kdt_id = store_info["sid"]
         store_id = store_info["sid"]
-        if not start:
-            start = datedic.get(str(store_id))
+        start = datedic.get(str(store_id))
         sql = "select id,reply_type_id,from_wechat_user_id, operation_type,from_wechat_user_id," \
               "DATE_FORMAT(operation_time,%s) as cycle,DATE_FORMAT(add_time,%s) as last_time,operation_time " \
               "from v_praise_statistic " \
@@ -73,8 +72,7 @@ def statistic(store_lis = None,func = None,start=None,end=None):
         else:
             cycle_lis = []
             func(res, add_time, store_name, kdt_id, cycle_lis, start,end)
-            # print(u" %s ，店铺ID: %d 无聊天记录" % (store_name, kdt_id))
-    # return now
+
 
 
 
@@ -258,5 +256,5 @@ if __name__ == '__main__':
     start2 = None
     store_lis = []
     end = datetime.datetime.now().strftime("%Y-%m-%d")
-    start1 =statistic(store_lis=store_lis,func=praise_statistics1,start=start1,end=end)
-    start2 = statistic(store_lis=store_lis, func=praise_statistics2, start=start2, end=end)
+    statistic(store_lis=store_lis,func=praise_statistics1,start=start1,end=end)
+    statistic(store_lis=store_lis, func=praise_statistics2, start=start2, end=end)
