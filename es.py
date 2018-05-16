@@ -27,8 +27,8 @@ def django_aip_es(es_mall_lis):
             max_article_id =0
 
         print("in  es  max article_id  is %d"%(max_article_id))
-        sql = "select * from third_part_wechat_articleinformation where id>%s and mall_id=%s and at_id=%s order by id"
-        cursor.execute(sql,[max_article_id,malls_id,1])
+        sql = "select * from third_part_wechat_articleinformation where id>%s and mall_id=%s and at_id in %s order by id"
+        cursor.execute(sql,[max_article_id,malls_id,[1,4]])
         res_all = cursor.fetchall()
         print(u"%d   %s %d条新数据"%(malls_id,malls,len(res_all)))
         if res_all:
