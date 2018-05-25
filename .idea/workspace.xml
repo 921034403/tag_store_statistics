@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05a65bf3-a733-433d-9237-a9e8be0a1023" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/praiseonline.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/corpus.py" afterPath="$PROJECT_DIR$/corpus.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es.py" afterPath="$PROJECT_DIR$/es.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/es_config.py" afterPath="$PROJECT_DIR$/es_config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ms.py" afterPath="$PROJECT_DIR$/ms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/praisestatistics.py" afterPath="$PROJECT_DIR$/praisestatistics.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tool.py" afterPath="$PROJECT_DIR$/tool.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,47 +44,31 @@
     <SUITE FILE_PATH="coverage/dataImport1$run.coverage" NAME="run Coverage Results" MODIFIED="1517464187761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataImport1$trans.coverage" NAME="trans Coverage Results" MODIFIED="1511950256173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/haishangshijie" />
     <SUITE FILE_PATH="coverage/dataImport1$mall_click.coverage" NAME="mall_click Coverage Results" MODIFIED="1517463678188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataImport1$praisestatistics.coverage" NAME="praisestatistics Coverage Results" MODIFIED="1526439244047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$praiseonline.coverage" NAME="praiseonline Coverage Results" MODIFIED="1527240049338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$praisestatistics.coverage" NAME="praisestatistics Coverage Results" MODIFIED="1527131138052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dataImport1$tool.coverage" NAME="tool Coverage Results" MODIFIED="1516006855386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataImport1$es_test.coverage" NAME="es_test Coverage Results" MODIFIED="1526287611131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dataImport1$corpus.coverage" NAME="corpus Coverage Results" MODIFIED="1526270392394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$es_test.coverage" NAME="es_test Coverage Results" MODIFIED="1527241030051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dataImport1$corpus.coverage" NAME="corpus Coverage Results" MODIFIED="1527145002524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="praisestatistics.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/praisestatistics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+            <state relative-caret-position="533">
+              <caret line="254" column="17" lean-forward="true" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
               <folding>
                 <element signature="e#34#60#0" expanded="true" />
-                <marker date="1526439734000" expanded="true" signature="337:457" ph="select max(a... data_analysis_praisestatistics" />
-                <marker date="1526439734000" expanded="true" signature="598:758" ph="select DATE_... data_analysis_praiseuserstatistics" />
-                <marker date="1526439734000" expanded="true" signature="976:1044" ph="select sid,`... third_part_wechat_praisestore" />
-                <marker date="1526439734000" expanded="true" signature="1149:1201" ph="select sid,`... third_part_wechat_praisestore" />
-                <marker date="1526439734000" expanded="true" signature="1149:1202" ph="select sid,`... third_part_wechat_praisestore" />
-                <marker date="1526439734000" expanded="true" signature="1583:1855" ph="select reply... v_praise_statistic" />
-                <marker date="1526439734000" expanded="true" signature="2257:2440" ph="select from_... v_praise_statistic" />
-                <marker date="1526439734000" expanded="true" signature="4841:4933" ph="select DISTI... third_part_wechat_praisechatrecord" />
-                <marker date="1526439734000" expanded="true" signature="5351:5528" ph="select reply... third_part_wechat_praisechatrecord" />
-                <marker date="1526439734000" expanded="true" signature="5351:5536" ph="select reply... third_part_wechat_praisechatrecord" />
-                <marker date="1526439734000" expanded="true" signature="8694:8786" ph="select DISTI... third_part_wechat_praisechatrecord" />
-                <marker date="1526439734000" expanded="true" signature="9198:9382" ph="select id,re... third_part_wechat_praisechatrecord" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataimport.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataimport.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="28" column="27" lean-forward="false" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding>
-                <marker date="1526100589000" expanded="true" signature="204:234" ph="insert into " />
-                <marker date="1526100589000" expanded="true" signature="366:515" ph="update data_... " />
-                <marker date="1526100589000" expanded="true" signature="788:880" ph="select * fro... data_analysis_praiseuserstatistics" />
-                <marker date="1526100589000" expanded="true" signature="1014:1330" ph="update data_... " />
+                <marker date="1526456806000" expanded="true" signature="337:457" ph="select max(a... data_analysis_praisestatistics" />
+                <marker date="1526456806000" expanded="true" signature="598:758" ph="select DATE_... data_analysis_praiseuserstatistics" />
+                <marker date="1526456806000" expanded="true" signature="976:1044" ph="select sid,`... third_part_wechat_praisestore" />
+                <marker date="1526456806000" expanded="true" signature="1149:1201" ph="select sid,`... third_part_wechat_praisestore" />
+                <marker date="1526456806000" expanded="true" signature="1557:1829" ph="select id,re... v_praise_statistic" />
+                <marker date="1526456806000" expanded="true" signature="2231:2414" ph="select id,fr... v_praise_statistic" />
+                <marker date="1526456806000" expanded="true" signature="4732:4824" ph="select DISTI... third_part_wechat_praisechatrecord" />
+                <marker date="1526456806000" expanded="true" signature="5242:5427" ph="select reply... third_part_wechat_praisechatrecord" />
+                <marker date="1526456806000" expanded="true" signature="8585:8677" ph="select DISTI... third_part_wechat_praisechatrecord" />
+                <marker date="1526456806000" expanded="true" signature="9089:9273" ph="select id,re... third_part_wechat_praisechatrecord" />
               </folding>
             </state>
           </provider>
@@ -102,7 +89,7 @@
       <file leaf-file-name="mall_click.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mall_click.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2322">
+            <state relative-caret-position="803">
               <caret line="89" column="11" lean-forward="false" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
               <folding>
                 <element signature="e#23#49#0" expanded="true" />
@@ -118,20 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create_es.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/create_es.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
+            <state relative-caret-position="533">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -140,15 +117,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="corpus.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="corpus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/corpus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="783">
+              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding>
-                <marker date="1526101587000" expanded="true" signature="169:238" ph="select DISTI... online_bussiness_corpusbatch" />
-                <marker date="1526101587000" expanded="true" signature="374:425" ph="select mall_... users_userprofile" />
-                <marker date="1526101587000" expanded="true" signature="538:578" ph="SELECT * FRO... v_corpus" />
+                <element signature="e#24#42#0" expanded="true" />
+                <marker date="1527054497000" expanded="true" signature="346:415" ph="select DISTI... online_bussiness_corpusbatch" />
+                <marker date="1527054497000" expanded="true" signature="551:602" ph="select mall_... users_userprofile" />
+                <marker date="1527054497000" expanded="true" signature="724:769" ph="select sid f... third_part_wechat_praisestore" />
+                <marker date="1527054497000" expanded="true" signature="724:788" ph="select sid f... third_part_wechat_praisestore" />
+                <marker date="1527054497000" expanded="true" signature="898:938" ph="SELECT * FRO... v_corpus" />
               </folding>
             </state>
           </provider>
@@ -157,8 +137,8 @@
       <file leaf-file-name="ms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="164">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -167,29 +147,52 @@
       <file leaf-file-name="es.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/es.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="177" column="17" lean-forward="true" selection-start-line="177" selection-start-column="17" selection-end-line="177" selection-end-column="17" />
+            <state relative-caret-position="193">
+              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
               <folding>
                 <element signature="e#23#68#0" expanded="true" />
-                <marker date="1526439008000" expanded="true" signature="403:449" ph="select id,ch... third_part_wechat_mall" />
-                <marker date="1526439008000" expanded="true" signature="1009:1111" ph="select * fro... third_part_wechat_articleinformation" />
-                <marker date="1526439008000" expanded="true" signature="1673:1762" ph="select tag_n... v_article_tag_store" />
-                <marker date="1526439008000" expanded="true" signature="2124:2190" ph="select chs_n... third_part_wechat_store" />
-                <marker date="1526439008000" expanded="true" signature="3370:3470" ph="update third... " />
-                <marker date="1526439008000" expanded="true" signature="3631:3658" ph="select * fro... v_praisegoods" />
-                <marker date="1526439008000" expanded="true" signature="5395:5464" ph="select DISTI... online_bussiness_corpusbatch" />
-                <marker date="1526439008000" expanded="true" signature="5600:5651" ph="select mall_... users_userprofile" />
-                <marker date="1526439008000" expanded="true" signature="5764:5804" ph="SELECT * FRO... v_corpus" />
+                <marker date="1527236953000" expanded="true" signature="403:449" ph="select id,ch... third_part_wechat_mall" />
+                <marker date="1527236953000" expanded="true" signature="1009:1114" ph="select * fro... third_part_wechat_articleinformation" />
+                <marker date="1527236953000" expanded="true" signature="1680:1769" ph="select tag_n... v_article_tag_store" />
+                <marker date="1527236953000" expanded="true" signature="2131:2197" ph="select chs_n... third_part_wechat_store" />
+                <marker date="1527236953000" expanded="true" signature="3377:3477" ph="update third... " />
+                <marker date="1527236953000" expanded="true" signature="3638:3665" ph="select * fro... v_praisegoods" />
+                <marker date="1527236953000" expanded="true" signature="5402:5471" ph="select DISTI... online_bussiness_corpusbatch" />
+                <marker date="1527236953000" expanded="true" signature="5607:5658" ph="select mall_... users_userprofile" />
+                <marker date="1527236953000" expanded="true" signature="5771:5811" ph="SELECT * FRO... v_corpus" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="es_config.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="praiseonline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/praiseonline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-539">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+                <marker date="1527240049000" expanded="true" signature="716:795" ph="select * fro... third_part_wechat_praisestore" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="74" column="58" lean-forward="true" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="es_config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/es_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="270">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
                 <element signature="e#1#48#0" expanded="true" />
               </folding>
@@ -279,15 +282,17 @@
         <option value="$PROJECT_DIR$/tag.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/mall_click.py" />
-        <option value="$PROJECT_DIR$/tool.py" />
         <option value="$PROJECT_DIR$/streammsg.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/create_es.py" />
-        <option value="$PROJECT_DIR$/es_config.py" />
         <option value="$PROJECT_DIR$/es_test.py" />
-        <option value="$PROJECT_DIR$/ms.py" />
-        <option value="$PROJECT_DIR$/es.py" />
         <option value="$PROJECT_DIR$/praisestatistics.py" />
+        <option value="$PROJECT_DIR$/corpus.py" />
+        <option value="$PROJECT_DIR$/es.py" />
+        <option value="$PROJECT_DIR$/tool.py" />
+        <option value="$PROJECT_DIR$/praiseonline.py" />
+        <option value="$PROJECT_DIR$/es_config.py" />
+        <option value="$PROJECT_DIR$/ms.py" />
       </list>
     </option>
   </component>
@@ -300,7 +305,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -317,8 +322,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,7 +354,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.praisestatistics">
+  <component name="RunManager" selected="Python.es_test">
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -592,6 +597,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="praiseonline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dataImport1" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/praiseonline.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="praisestatistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -610,38 +633,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dataImport1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.test" />
-      <item index="1" class="java.lang.String" itemvalue="Python.es_test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.create_es" />
-      <item index="3" class="java.lang.String" itemvalue="Python.praisestatistics" />
-      <item index="4" class="java.lang.String" itemvalue="Python.corpus" />
+      <item index="0" class="java.lang.String" itemvalue="Python.es_test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.create_es" />
+      <item index="2" class="java.lang.String" itemvalue="Python.praisestatistics" />
+      <item index="3" class="java.lang.String" itemvalue="Python.corpus" />
+      <item index="4" class="java.lang.String" itemvalue="Python.praiseonline" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.praisestatistics" />
-        <item index="1" class="java.lang.String" itemvalue="Python.es_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.es_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.praiseonline" />
         <item index="2" class="java.lang.String" itemvalue="Python.corpus" />
-        <item index="3" class="java.lang.String" itemvalue="Python.create_es" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.praisestatistics" />
+        <item index="4" class="java.lang.String" itemvalue="Python.create_es" />
       </list>
     </recent_temporary>
   </component>
@@ -656,6 +661,21 @@
       <option name="presentableId" value="Default" />
       <updated>1509520870751</updated>
     </task>
+    <task id="LOCAL-00001" summary="服务同步">
+      <created>1526456865137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526456865137</updated>
+    </task>
+    <task id="LOCAL-00002" summary="服务同步">
+      <created>1526465946494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526465946494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -668,15 +688,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1023" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12687366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12366167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.50214136" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29936305" sideWeight="0.49785867" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65679824" sideWeight="0.49785867" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16938111" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -698,14 +718,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="服务同步" />
+    <option name="LAST_COMMIT_MESSAGE" value="服务同步" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user_group.py" />
     <entry file="file://$PROJECT_DIR$/category3.py" />
     <entry file="file://$PROJECT_DIR$/category1.py" />
     <entry file="file://$PROJECT_DIR$/category.py" />
@@ -763,13 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -852,6 +868,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -864,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mall_click.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2322">
+        <state relative-caret-position="803">
           <caret line="89" column="11" lean-forward="false" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
           <folding>
             <element signature="e#23#49#0" expanded="true" />
@@ -879,17 +903,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/praisestatistics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="533">
+          <caret line="254" column="17" lean-forward="true" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
+          <folding>
+            <element signature="e#34#60#0" expanded="true" />
+            <marker date="1526456806000" expanded="true" signature="337:457" ph="select max(a... data_analysis_praisestatistics" />
+            <marker date="1526456806000" expanded="true" signature="598:758" ph="select DATE_... data_analysis_praiseuserstatistics" />
+            <marker date="1526456806000" expanded="true" signature="976:1044" ph="select sid,`... third_part_wechat_praisestore" />
+            <marker date="1526456806000" expanded="true" signature="1149:1201" ph="select sid,`... third_part_wechat_praisestore" />
+            <marker date="1526456806000" expanded="true" signature="1557:1829" ph="select id,re... v_praise_statistic" />
+            <marker date="1526456806000" expanded="true" signature="2231:2414" ph="select id,fr... v_praise_statistic" />
+            <marker date="1526456806000" expanded="true" signature="4732:4824" ph="select DISTI... third_part_wechat_praisechatrecord" />
+            <marker date="1526456806000" expanded="true" signature="5242:5427" ph="select reply... third_part_wechat_praisechatrecord" />
+            <marker date="1526456806000" expanded="true" signature="8585:8677" ph="select DISTI... third_part_wechat_praisechatrecord" />
+            <marker date="1526456806000" expanded="true" signature="9089:9273" ph="select id,re... third_part_wechat_praisechatrecord" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#68#0" expanded="true" />
+            <marker date="1527236953000" expanded="true" signature="403:449" ph="select id,ch... third_part_wechat_mall" />
+            <marker date="1527236953000" expanded="true" signature="1009:1114" ph="select * fro... third_part_wechat_articleinformation" />
+            <marker date="1527236953000" expanded="true" signature="1680:1769" ph="select tag_n... v_article_tag_store" />
+            <marker date="1527236953000" expanded="true" signature="2131:2197" ph="select chs_n... third_part_wechat_store" />
+            <marker date="1527236953000" expanded="true" signature="3377:3477" ph="update third... " />
+            <marker date="1527236953000" expanded="true" signature="3638:3665" ph="select * fro... v_praisegoods" />
+            <marker date="1527236953000" expanded="true" signature="5402:5471" ph="select DISTI... online_bussiness_corpusbatch" />
+            <marker date="1527236953000" expanded="true" signature="5607:5658" ph="select mall_... users_userprofile" />
+            <marker date="1527236953000" expanded="true" signature="5771:5811" ph="SELECT * FRO... v_corpus" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#1#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="74" column="58" lean-forward="true" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/praiseonline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1527240049000" expanded="true" signature="716:795" ph="select * fro... third_part_wechat_praisestore" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/create_es.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="533">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -897,73 +989,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/praisestatistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
-          <folding>
-            <element signature="e#34#60#0" expanded="true" />
-            <marker date="1526439734000" expanded="true" signature="337:457" ph="select max(a... data_analysis_praisestatistics" />
-            <marker date="1526439734000" expanded="true" signature="598:758" ph="select DATE_... data_analysis_praiseuserstatistics" />
-            <marker date="1526439734000" expanded="true" signature="976:1044" ph="select sid,`... third_part_wechat_praisestore" />
-            <marker date="1526439734000" expanded="true" signature="1149:1201" ph="select sid,`... third_part_wechat_praisestore" />
-            <marker date="1526439734000" expanded="true" signature="1149:1202" ph="select sid,`... third_part_wechat_praisestore" />
-            <marker date="1526439734000" expanded="true" signature="1583:1855" ph="select reply... v_praise_statistic" />
-            <marker date="1526439734000" expanded="true" signature="2257:2440" ph="select from_... v_praise_statistic" />
-            <marker date="1526439734000" expanded="true" signature="4841:4933" ph="select DISTI... third_part_wechat_praisechatrecord" />
-            <marker date="1526439734000" expanded="true" signature="5351:5528" ph="select reply... third_part_wechat_praisechatrecord" />
-            <marker date="1526439734000" expanded="true" signature="5351:5536" ph="select reply... third_part_wechat_praisechatrecord" />
-            <marker date="1526439734000" expanded="true" signature="8694:8786" ph="select DISTI... third_part_wechat_praisechatrecord" />
-            <marker date="1526439734000" expanded="true" signature="9198:9382" ph="select id,re... third_part_wechat_praisechatrecord" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/corpus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        <state relative-caret-position="783">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
-            <marker date="1526101587000" expanded="true" signature="169:238" ph="select DISTI... online_bussiness_corpusbatch" />
-            <marker date="1526101587000" expanded="true" signature="374:425" ph="select mall_... users_userprofile" />
-            <marker date="1526101587000" expanded="true" signature="538:578" ph="SELECT * FRO... v_corpus" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/es.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="177" column="17" lean-forward="true" selection-start-line="177" selection-start-column="17" selection-end-line="177" selection-end-column="17" />
-          <folding>
-            <element signature="e#23#68#0" expanded="true" />
-            <marker date="1526439008000" expanded="true" signature="403:449" ph="select id,ch... third_part_wechat_mall" />
-            <marker date="1526439008000" expanded="true" signature="1009:1111" ph="select * fro... third_part_wechat_articleinformation" />
-            <marker date="1526439008000" expanded="true" signature="1673:1762" ph="select tag_n... v_article_tag_store" />
-            <marker date="1526439008000" expanded="true" signature="2124:2190" ph="select chs_n... third_part_wechat_store" />
-            <marker date="1526439008000" expanded="true" signature="3370:3470" ph="update third... " />
-            <marker date="1526439008000" expanded="true" signature="3631:3658" ph="select * fro... v_praisegoods" />
-            <marker date="1526439008000" expanded="true" signature="5395:5464" ph="select DISTI... online_bussiness_corpusbatch" />
-            <marker date="1526439008000" expanded="true" signature="5600:5651" ph="select mall_... users_userprofile" />
-            <marker date="1526439008000" expanded="true" signature="5764:5804" ph="SELECT * FRO... v_corpus" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/es_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding>
-            <element signature="e#1#48#0" expanded="true" />
+            <element signature="e#24#42#0" expanded="true" />
+            <marker date="1527054497000" expanded="true" signature="346:415" ph="select DISTI... online_bussiness_corpusbatch" />
+            <marker date="1527054497000" expanded="true" signature="551:602" ph="select mall_... users_userprofile" />
+            <marker date="1527054497000" expanded="true" signature="724:769" ph="select sid f... third_part_wechat_praisestore" />
+            <marker date="1527054497000" expanded="true" signature="724:788" ph="select sid f... third_part_wechat_praisestore" />
+            <marker date="1527054497000" expanded="true" signature="898:938" ph="SELECT * FRO... v_corpus" />
           </folding>
         </state>
       </provider>

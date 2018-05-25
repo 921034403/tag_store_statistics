@@ -21,6 +21,9 @@ def corpus():
         cursor.execute("select mall_id from users_userprofile where id = %s",[user_id])
         mallinfo = cursor.fetchone() or {}
         mall_id = mallinfo.get("mall_id")
+        cursor.execute("select sid from third_part_wechat_praisestore where mall_id = %s",[mall_id])
+        storeinfo = cursor.fetchone() or {}
+        kdt_id = storeinfo.get("sid")
         sql = "SELECT * FROM v_corpus where user_id =%s "
         cursor.execute(sql,[user_id])
         data = cursor.fetchall()
@@ -32,13 +35,15 @@ def corpus():
                 for i in action_lis:
                     if mall_id:
                         i["mall_id"] = mall_id
+                    if kdt_id:
+                        i["kdt_id"] = kdt_id
                     i["_id"] = i["corpusobject_id"]
                     i["question_list"] = json.loads(i["question_list"])
                     i["text_anwser"] = json.loads(i["answer_list"])['text_anwser']
                     i["praisegoods_answer"] = json.loads(i["answer_list"])['praisegoods_answer']
                     del i["answer_list"]
-            ok, err = helpers.bulk(client, actions=action_lis, index=corpus_es, doc_type="corpus")
-            print(ok,err)
+                ok, err = helpers.bulk(client, actions=action_lis, index=corpus_es, doc_type="corpus")
+                print(ok,err)
 
 if __name__ == "__main__":
     # 词库导入

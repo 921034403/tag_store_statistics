@@ -8,7 +8,7 @@ try:
 except:
     print(u"获取IP失败")
     IP = "127.0.0.1"
-if IP == "120.76.102.238":
+if IP is not  "120.76.102.238":
     print(u"当前处于生产环境 ip: %s" % (IP))
     mysql_option = {
         "host": "119.23.153.216",

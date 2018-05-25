@@ -188,12 +188,12 @@ if __name__ == "__main__":
 
 
     # todo 清空index
-    # delete_praise([corpus_es])
+    # empty_praise()
 
 
 
     # todo 删除index
-    # delete_praise([corpus_es])
+    # delete_praise([])
 
 
 
