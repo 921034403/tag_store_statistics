@@ -8,7 +8,7 @@ try:
 except:
     print(u"获取IP失败")
     IP = "127.0.0.1"
-if IP is not  "120.76.102.238":
+if IP ==  "120.76.102.238":
     print(u"当前处于生产环境 ip: %s" % (IP))
     mysql_option = {
         "host": "119.23.153.216",
@@ -25,8 +25,8 @@ if IP is not  "120.76.102.238":
 else:
     print(u"当前处于测试环境 ip: %s" % (IP))
     mysql_option = {
-        "host": "119.23.153.216",
-        "port": 6001,
+        "host": "119.23.142.224",
+        "port": 3306,
         "user": "root",
         "password": "gxtangyu",
         "database": "django_aip",
