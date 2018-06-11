@@ -50,7 +50,6 @@ def statistic(store_lis = None,func = None,start=None,end=None):
         if end:
             sql += "and DATE_FORMAT(operation_time,%s)< %s "
             params += ['%Y-%m-%d', end]
-
         cursor.execute(sql,params)
         res = cursor.fetchall()
         if res:
@@ -134,11 +133,25 @@ def praise_statistics1(res,add_time,store_name,kdt_id,cycle_lis,start,end):
         for action in res:
             cycle = action['add_time_desc']
             reply_type_id = action['reply_type_id']
-            if cycle_infos.get(cycle):
-                if reply_type_id == 8:
-                    cycle_infos[cycle]['hf_visit_count'].append(action['from_wechat_user_id'])
-                elif reply_type_id == 7:
-                    cycle_infos[cycle]['wechat_visit_count'].append(action['from_wechat_user_id'])
+            if not cycle_infos.get(cycle):
+                cycle_infos[cycle] = {"add_time_desc": cycle,
+                                "add_time": add_time,
+                                "store_name": store_name,
+                                "kdt_id": kdt_id,
+                                "statistics_type": 5,
+                                "hf_visit_count": [],
+                                "wechat_visit_count": [],
+                                "hf_push_count": 0,
+                                "wechat_push_count": 0,
+                                "hf_click_count": 0,
+                                "wechat_click_count": 0
+                                }
+
+            if reply_type_id == 8:
+                cycle_infos[cycle]['hf_visit_count'].append(action['from_wechat_user_id'])
+            elif reply_type_id == 7:
+                cycle_infos[cycle]['wechat_visit_count'].append(action['from_wechat_user_id'])
+
 
     for cycle, cycle_info in cycle_infos.items():
         cycle_info['wechat_visit_count'] = len(set(cycle_info['wechat_visit_count']))
