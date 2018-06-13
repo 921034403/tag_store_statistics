@@ -8,7 +8,7 @@ try:
 except:
     print(u"获取IP失败")
     IP = "127.0.0.1"
-if IP ==  "120.76.102.238":
+if IP == "120.76.102.238":
     print(u"当前处于生产环境 ip: %s" % (IP))
     mysql_option = {
         "host": "119.23.153.216",
@@ -20,8 +20,8 @@ if IP ==  "120.76.102.238":
         'charset': "utf8",
         "local_infile": True
     }
-    praise_es = "django_aip_es_praise_v6"
-    corpus_es = "django_aip_corpus_v1"
+    praise_es = "django_aip_es_praise_v7"
+    corpus_es = "django_aip_corpus_v2"
 else:
     print(u"当前处于测试环境 ip: %s" % (IP))
     mysql_option = {
@@ -34,8 +34,8 @@ else:
         'charset': "utf8",
         "local_infile": True
     }
-    praise_es = "django_aip_es_praise_v7"
-    corpus_es = "django_aip_corpus_v1(test)"
+    praise_es = "django_aip_es_praise_v7(test)"
+    corpus_es = "django_aip_corpus_v2(test)"
 
 
 conn = pymysql.connect(**mysql_option)
