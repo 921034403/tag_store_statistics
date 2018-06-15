@@ -68,6 +68,27 @@ class DjangoAipCorpus_V1(DocType):
         index = 'django_aip_corpus_v1'
         doc_type = 'corpus'
 
+
+
+
+class DjangoAipCorpus_V2(DocType):
+    user_id = Integer()
+    mall_id = Integer()
+    batch_id = Integer()
+    corpusobject_id = Integer()
+    kdt_id = Integer()
+    batch_file = Keyword()
+    question_list = Text(analyzer=ik_smart_synonym,
+                         fields={"pinyin":Text(analyzer=pinyin_analyzer)})
+    text_anwser = Keyword()
+    praisegoods_answer = Keyword()
+    corpus_batch_name = Keyword()
+    update_time = Date()
+    add_time = Date()
+    class Meta:
+        index = 'django_aip_corpus_v1'
+        doc_type = 'corpus'
+
     user_id = Integer()
     mall_id = Integer()
     batch_id = Integer()
@@ -82,8 +103,37 @@ class DjangoAipCorpus_V1(DocType):
     update_time = Date()
     add_time = Date()
     class Meta:
-        index = 'django_aip_corpus_v1'
+        index = 'django_aip_corpus_v2'
         doc_type = 'corpus'
 
+class DjangoAipEsPraiseV6(DocType):
+    picture = Keyword()
+    update_time = Date()
+    kdt_id = Integer()
+    price = Integer()
+    created_time = Date()
+    item_type = Integer()
+    malls = Keyword()
+    sold_num = Integer()
+    item_id = Integer()
+    logo = Keyword()
+    detail_url = Keyword()
+    id = Integer()
+    item_no = Keyword()
+    cid = Integer()
+    malls_id = Integer()
+    alias = Keyword()
+    post_fee = Integer()
+    title = Text(analyzer=ik_max_word_synonym, fields={"pinyin": Text(analyzer=pinyin_analyzer)})
+    post_type = Integer()
+    item_tags = Keyword()
+    is_display = Integer()
+    class Meta:
+        index = 'django_aip_es_praise_v6(test)'
+        doc_type = 'goods'
+
+
+
+
 if __name__ == '__main__':
-    DjangoAipCorpus_V1.init()
+    DjangoAipEsPraiseV6.init()
