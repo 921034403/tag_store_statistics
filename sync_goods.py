@@ -30,6 +30,8 @@ class SyncGoods(object):
         self.hide_lis   = []  # 需要隐藏的商品
         self.onsale_lis = []  # 在售商品
         self.outsale_lis= []  # 仓库商品
+        self.basic_auth = "https://open.youzan.com/api/oauthentry/youzan.shop.basic/3.0.0/get" \
+                          "?access_token="
 
     # 整理出删除  改动  下架的所有商品id列表
     def reorganize(self):
@@ -41,6 +43,11 @@ class SyncGoods(object):
             conf[str(self.sid)] = end
             name    = store["name"]
             token   = store["access_token"]
+            r_auth = requests.get(self.basic_auth+token)
+            r_auth_json = r_auth.json()
+            if r_auth_json.get("error_response"):
+                print("%s店铺授权出错 可能解除授权"%(name))
+                continue
             payload = {"access_token":token}
             print("--------店铺：%s (%s)-----"%(name,self.sid))
             onsale_count  = self.goods_count(self.onsale,payload)
@@ -196,7 +203,7 @@ class SyncGoods(object):
                 ok = helpers.bulk(client, actions=action_lis, index=praise_es, doc_type="goods")
 
         # 删除
-        print(delete_lis)
+        # print(delete_lis)
         if delete_lis:
             s = Search(using=client,index=praise_es,doc_type="goods")\
                 .filter("terms",item_id=delete_lis).delete()
