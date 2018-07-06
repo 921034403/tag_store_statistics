@@ -69,7 +69,7 @@ class SyncGoods(object):
             delete_lis  = list(set(exist_lis)-set(onsale_lis)-set(outsale_lis))
             hide_lis    = outsale_lis
             print("更新：%d ，删除：%d， 隐藏：%d"%(len(update_lis),len(delete_lis),len(hide_lis)))
-            self.handerData(update_lis,onsale_lis,delete_lis,token)
+            self.handerData(update_lis,onsale_lis,delete_lis,token,self.sid)
             with open("sync_goods_conf.py", "w+") as f:
                 st = "conf=" + str(conf)
                 f.write(st)
@@ -131,7 +131,7 @@ class SyncGoods(object):
             else:
                 return []
 
-    def handerData(self,update_lis,onsale_lis,delete_lis,token):
+    def handerData(self,update_lis,onsale_lis,delete_lis,token,sid):
         err_items = []
         params = []
         try:
@@ -204,13 +204,31 @@ class SyncGoods(object):
 
         # 删除
         # print(delete_lis)
+
         if delete_lis:
-            s = Search(using=client,index=praise_es,doc_type="goods")\
-                .filter("terms",item_id=delete_lis).delete()
+            if  sid == 19235176:
+                sql = "select * from v_praisegoods where item_id in %s"
+                cursor.execute(sql,[delete_lis])
+                res_all = cursor.fetchall()
+                for i in res_all:
+                    i['_id'] = i['item_id']
+                    # print(i)
+                if res_all:
+                    count = 20  # everytime insert es data`s count
+                    insert_count = int(random._ceil(len(res_all) / float(count)))
+                    for cut in xrange(1, insert_count + 1):
+                        action_lis = res_all[(cut - 1) * count:cut * count]
+                        ok = helpers.bulk(client, actions=action_lis,
+                                          index=praise_es, doc_type="goods")
+                        print(ok)
+            else:
+                s = Search(using=client,index=praise_es,doc_type="goods")\
+                                    .filter("terms",item_id=delete_lis).delete()
+
 
 
 
 
 if __name__ == '__main__':
-    sync = SyncGoods(kdt_id=[])
+    sync = SyncGoods(kdt_id=[19235176])
     sync.reorganize()
