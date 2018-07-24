@@ -168,15 +168,27 @@ class SyncGoods(object):
             print(err_items)
         print("更新请求出错：%d条"%(len(err_items)))
         if params:
-            sql = "replace into third_part_wechat_praisegoods" \
+            sql1 = "insert into third_part_wechat_praisegoods" \
                   "(item_id,title,price,item_type,sold_num,detail_url," \
                   "quantity,post_fee,picture,created_time, update_time," \
                   "alias,post_type,kdt_id,is_display,cid, item_no,item_tags," \
                   "ordering_type)" \
                   "VALUES "
-            sql +=",".join(["%s"]*len(params))
-            cursor.execute(sql,params)
-            conn.commit()
+            sql2 = "update third_part_wechat_praisegoods set" \
+                  "item_id=%s,title=%s,price=%s,item_type=%s,sold_num=%s,detail_url=%s," \
+                  "quantity=%s,post_fee=%s,picture=%s,created_time=%s,update_time=%s," \
+                  "alias=%s,post_type=%s,kdt_id=%s,is_display=%s,cid=%s,item_no=%s," \
+                  "item_tags=%s,ordering_type=%s" \
+                  "VALUES "
+            for iteminfo in params:
+                cursor.execute("select id from third_part_wechat_praisegoods where item_id=%s",
+                               [iteminfo[0]])
+                if cursor.fetchone():
+                    cursor.execute(sql2,iteminfo[1:]+iteminfo[0])
+                    conn.commit()
+                else:
+                    cursor.execute(sql1,iteminfo)
+                    conn.commit()
         if onsale_lis:
             cursor.execute("update third_part_wechat_praisegoods set is_display=%s "
                            "where item_id in %s and kdt_id=%s",[1,onsale_lis,self.sid])
